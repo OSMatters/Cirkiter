@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1778F5">
+  <meta name="description" content="Crikit / 圈记 support and privacy information.">
+  <title>Crikit · 圈记</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" data-page-link="support" href="?page=support">
+        <img src="assets/logo.png" alt="Crikit logo">
+        <span class="brand-copy">
+          <strong>Crikit</strong>
+          <small>圈记</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a data-nav-page="support" data-page-link="support" href="?page=support">Support</a>
+        <a data-nav-page="privacy" data-page-link="privacy" href="?page=privacy">Privacy</a>
+      </nav>
+
+      <label class="language-picker">
+        <span class="sr-only">Language</span>
+        <select id="language-select" aria-label="Language">
+          <option value="zh-Hans">简体中文</option>
+          <option value="zh-Hant">繁體中文</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" id="hero-eyebrow">Crikit · 圈记</p>
+          <h1 id="hero-title">把记忆变成可回想的线索。</h1>
+          <p class="hero-description" id="hero-description"></p>
+          <div class="hero-actions">
+            <a class="button button-primary" data-page-link="support" href="?page=support" id="hero-support-link">联系支持</a>
+            <a class="button button-quiet" data-page-link="privacy" href="?page=privacy" id="hero-privacy-link">查看隐私政策</a>
+          </div>
+        </div>
+        <div class="hero-orbit" aria-hidden="true">
+          <div class="orbit orbit-large"></div>
+          <div class="orbit orbit-small"></div>
+          <div class="orbit-dot orbit-dot-one"></div>
+          <div class="orbit-dot orbit-dot-two"></div>
+          <div class="orbit-dot orbit-dot-three"></div>
+          <div class="hero-card hero-card-top">92%<small>active recall</small></div>
+          <div class="hero-card hero-card-bottom">○<small>one memory cue</small></div>
+        </div>
+      </section>
+
+      <div class="content-layout">
+        <aside class="section-nav" aria-label="Page sections">
+          <p class="section-nav-label" id="section-nav-label">页面</p>
+          <a data-nav-page="support" data-page-link="support" href="?page=support" id="support-nav-link">支持</a>
+          <a data-nav-page="privacy" data-page-link="privacy" href="?page=privacy" id="privacy-nav-link">隐私政策</a>
+          <div class="local-note">
+            <span class="local-note-icon">✦</span>
+            <p id="local-note-text">本页内容按语言切换，链接保持不变。</p>
+          </div>
+        </aside>
+
+        <article class="content-card" id="content" aria-live="polite"></article>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="footer-year">2026</span> Crikit</span>
+      <span id="footer-note">Local-first active recall study.</span>
+    </footer>
+  </div>
+
+  <noscript>
+    <div class="noscript">Please enable JavaScript to view the localized support and privacy pages.</div>
+  </noscript>
+  <script src="script.js"></script>
+</body>
+</html>
